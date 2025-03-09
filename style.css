@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+button {
+  padding: 0.7rem 1.3rem;
+  color: white;
+  background-color: black;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  padding-top: 1.2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.3rem;
+}
+nav section {
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-part-2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+nav .nav-part-2 a, nav .nav-part-2 button {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  gap: 1.4rem;
+}
+main .view-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-1 img {
+  width: 100%;
+}
+main .view-1 .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .view-1 .bottom p {
+  font-weight: 500;
+  font-size: 0.8em;
+  opacity: 0.8;
+  letter-spacing: 0.09em;
+}
+main .view-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+main .view-2 .top {
+  width: 100%;
+}
+main .view-2 .top img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+main .view-2 .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .view-2 .bottom h1 {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  font-weight: 400;
+  opacity: 0.8;
+  line-height: 0.9;
+}
+main .view-2 .bottom p {
+  font-family: monospace;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+main .view-2 .bottom .SERVICES {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main .view-2 .bottom .SERVICES .service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .view-2 .bottom .SERVICES .service p {
+  font-size: 2.2rem;
+  opacity: 0.5;
+}
+main .view-3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.01fr 4fr;
+  gap: 1.5rem;
+}
+main .view-3 .view-3-top {
+  grid-column: 1/3;
+}
+main .view-3 .view-3-top img {
+  width: 100%;
+}
+main .view-3 .tilted-text {
+  writing-mode: vertical-lr;
+  font-family: monospace;
+  word-spacing: 1px;
+  padding-top: 1rem;
+}
+main .view-3 .view-3-bottom {
+  grid-column: 2/3;
+}
+main .view-3 .view-3-bottom h5 {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+main .view-3 .view-3-bottom p {
+  font-family: monospace;
+  opacity: 0.5;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+main .view-4 {
+  display: grid;
+  grid-template-columns: minmax(1fr, 1fr, 1fr);
+  width: 100%;
+}
+main .view-4 h1 {
+  text-transform: uppercase;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
+}
+main .view-4 .view-4-card-container .card {
+  background-color: aqua;
+}
+main .view-4 .view-4-card-container .card h1 {
+  font-size: 1.5rem;
+}
+main .view-4 .view-4-card-container .card p {
+  font-family: monospace;
+}
+main .view-4 .view-4-card-container .card .card-bottom {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .view-4 .view-4-card-container .card .card-bottom .ri-arrow-right-up-line {
+  background-color: #000;
+  color: white;
+  border-radius: 50%;
+  font-size: 2.2rem;
+  font-weight: 200;
+}
+main .view-4 .view-4-card-container .card .card-bottom p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+}
+
+@media (min-width: 900px) {
+  nav {
+    padding: 3rem 4rem;
+  }
+  nav .nav-part-2 {
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  nav .nav-part-2 a, nav .nav-part-2 button {
+    display: block;
+  }
+  nav .nav-part-2 a {
+    text-decoration: none;
+    color: black;
+  }
+  nav .nav-part-2 p {
+    display: none;
+  }
+  main {
+    padding: 0rem 4rem;
+  }
+  main .view-2 {
+    flex-direction: row-reverse;
+    gap: 5rem;
+  }
+  main .view-2 .top, main .view-2 .bottom {
+    width: 50%;
+  }
+  main .view-2 .bottom {
+    padding: 4.5rem 0.5rem;
+    gap: 3rem;
+  }
+  main .view-2 .bottom h1 {
+    font-size: 5.8rem;
+  }
+  main .view-2 .bottom p {
+    font-size: 1.8rem;
+  }
+  main .view-3 {
+    grid-template-columns: 2fr 4fr 0.1fr;
+    grid-template-rows: 1fr;
+    gap: 4.5rem;
+  }
+  main .view-3 .view-3-top {
+    grid-column: 1/2;
+  }
+  main .view-3 .view-3-top img {
+    width: 100%;
+  }
+  main .view-3 .view-3-bottom {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-row: 1/2;
+  }
+  main .view-3 .view-3-bottom h5 {
+    font-size: 6.1rem;
+    line-height: 1;
+  }
+  main .view-3 .view-3-bottom p {
+    font-size: 1.3rem;
+    width: 80%;
+    line-height: 1.5;
+  }
+  main .view-3 .tilted-text {
+    grid-column: 3/4;
+    padding-top: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
